@@ -1,0 +1,147 @@
+<!DOCTYPE html> <!--วิชาที่เปิดสอน https://reg.mju.ac.th/registrar/class_info.asp?avs178238701=9-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วิชาที่เปิดสอน</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div class="navbar bg-base-100 shadow-sm navbar-center bg-green-400">
+        <div class="flex-1 ">
+            <a href="https://reg.mju.ac.th/registrar/home.asp"><img
+                    src="https://www.mju.ac.th/th/images/mju_logo_main-resize.png"
+                    class="h-8 w-auto sm:h-10 md:h-12"></a>
+        </div>
+        <div class="flex-none ">
+            <ul class="menu menu-horizontal px-1 gap-3">
+                <li><a class="btn">เมนูหลัก</a></li>
+                <li><a class="btn">Log in</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="breadcrumbs text-sm pl-4">
+        <ul>
+            <li><a>เมนูหลัก</a></li>
+            <li><a>วิชาที่เปิดสอน</a></li>
+            <li><a href="secondpage.html">ตารางเรียนนักศึกษา</a></li>
+            <li><a href="thirdpage.html">เสนอความคิดเห็น</a></li>
+        </ul>
+    </div>
+    <div class="flex flex-row gap-8 p-6">
+        <div class="flex flex-col items-center flex-1">
+            <br><br>
+            <p><b>ขั้นตอนที่ 1 </b>หมวดวิชา</p><br>
+            <label class="select">
+                <select>
+                    <option>ทุกรหัสวิชา</option>
+                    <option>รหัสวิชา ที่ยังใช้อยู่</option>
+                    <option>รหัสวิชา ที่เลิกใช้แล้ว</option>
+                </select>
+            </label><br><br>
+            <p><b>ขั้นตอนที่ 2 </b>หน่วยงานเจ้าของรายวิชา</p><br>
+            <label class="select">
+                <select>
+                    <option>ทั้งหมด</option>
+                    <option>วิทยาศาสตร์</option>
+                    <option>เศษฐศาสตร์</option>
+                    <option>ศิลปศาสตร์</option>
+                    <option>อื่นๆ</option>
+                </select>
+            </label><br><br>
+            <p><b>ขั้นตอนที่ 3</b></p><br>
+            <div class="flex items-center gap-3">
+                <span class="whitespace-nowrap">ปีการศึกษา</span>
+                <label class="select w-[bg-base-100]">
+                    <select>
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                        <option>2026</option>
+                    </select>
+                </label>
+                <span>-</span>
+                <label class="select w-[80px]">
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </label>
+            </div><br>
+            <div class="flex items-center gap-3">
+                <span class="whitespace-nowrap">วิทยาเขต</span>
+                <label class="select w-[bg-base-100]">
+                    <select>
+                        <option>ทั้งหมด</option>
+                        <option>50 : เชียงใหม่</option>
+                        <option>51 : วิทยาลัยบริหารศาสตร์</option>
+                        <option>54 : แพร่</option>
+                        <option>86 : ชุมพร</option>
+                    </select>
+                </label>
+            </div><br>
+            <div class="flex items-center gap-3">
+                <span class="whitespace-nowrap">ระดับศึกษา</span>
+                <label class="select w-[bg-base-100]">
+                    <select>
+                        <option>ทั้งหมด</option>
+                        <option>ปริญญาตรี</option>
+                        <option>ปริญญาโท</option>
+                        <option>ปนิญญาเอก</option>
+                    </select>
+                </label>
+            </div><br><br>
+            <p><b>ขั้นตอนที่ 4 </b>ป้อนข้อความ/รหัสวิชาที่ต้องการค้นหา</p><br>
+            <div class="flex items-center gap-3">
+                <label class="floating-label">
+                    <input type="text" placeholder="ป้อนตัวเลข" class="input input-md" />
+                    <span>ป้อนตัวเลข</span>
+                </label>
+                <span>หรือ</span>
+                <label class="floating-label">
+                    <input type="text" placeholder="ป้อนข้อความ" class="input input-md" />
+                    <span>ป้อนข้อความ</span>
+                </label>
+            </div><br>
+            <div class="overflow-x-auto">
+                <table class="table table-bordered w-full">
+                    <thead>
+                        <tr class="bg-green-400 text-black">
+                            <th>ต้องการค้นหา</th>
+                            <th>พิมพ์ในช่อง</th>
+                            <th>ตัวอย่าง</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>วิชาที่ขึ้นต้นด้วยรหัส 102</td>
+                            <td>ช่องซ้าย: <b>102*</b></td>
+                            <td>หาวิชารหัส 102xxx</td>
+                        </tr>
+                        <tr>
+                            <td>วิชาที่มีคำว่า "world" ในชื่อ</td>
+                            <td>ช่องขวา: <b>*world*</b></td>
+                            <td>หาวิชาที่มีคำ world</td>
+                        </tr>
+                        <tr>
+                            <td>วิชาที่ลงท้ายด้วย "finance"</td>
+                            <td>ช่องขวา: <b>*finance</b></td>
+                            <td>หาวิชาที่ชื่อจบด้วย finance</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div><br><br>
+            <div class="flex gap-3">
+                <a class="btn bg-green-400">ค้นหา</a>
+                <a class="btn">ยกเลิก</a>
+            </div><br><br>
+        </div>
+    </div>
+</body>
+
+</html>
